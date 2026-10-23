@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzhinweis · Admota</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="admota.css">
+</head>
+<body>
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
+<header class="site-header">
+<div class="wrap">
+<a class="brand" href="../index.html">Benjamin Hargarten</a>
+<nav class="site-nav" aria-label="Hauptnavigation"><a href="index.html">Admota</a><a href="../impressum.html">Impressum</a><a href="datenschutz.html" aria-current="page">Datenschutz</a></nav>
+</div>
+</header>
+<main id="inhalt" class="wrap page">
+<header class="page-header"><h1>Datenschutzhinweis Admota</h1></header>
+<p class="muted">Fassung 1 zu App 0.30 · Stand 23. Oktober 2026</p>
+<p class="muted">Dieser Hinweis gilt für die App Admota und ihre Server. Für diese Webseite (hargarten.net, bereitgestellt über GitHub Pages) gilt die <a href="../datenschutz.html">Datenschutzerklärung der Website</a>.</p>
+<section class="ds">
+<h2>Kurzfassung</h2>
+<ul>
+<li><strong>Wer ist verantwortlich:</strong> Benjamin Hargarten, Postanschrift in Aichach. Fragen zum Datenschutz an kontakt@admota.de.</li>
+<li><strong>Was wir verarbeiten:</strong> dein Konto, deine Gruppen, Nachrichten und Routen deiner Gruppen und deine Position – <strong>nur, solange du mit einer Gruppe mitfährst oder allein „an Admota senden“ eingeschaltet hast</strong> (und einmal, wenn du „Zur Gruppe stoßen“ nutzt).</li>
+<li><strong>Wo es liegt:</strong> auf unseren eigenen Servern in der EU. Apple ist beteiligt bei Anmeldung, Mitteilungen, Karten und Siri.</li>
+<li><strong>Wer es sieht:</strong> die Mitglieder der jeweiligen Gruppe. Erlaubst du Mitteilungen, zeigt dein Gerät Absender und Text auch auf dem Sperrbildschirm (zugestellt über Apple). Keine Werbung, kein Tracking, keine Analyse-Werkzeuge von Dritten.</li>
+<li><strong>Wie du löschst:</strong> in der App unter Ich → „Konto löschen …“ – sofort und endgültig.</li>
+</ul>
+<h2>1. Verantwortlicher</h2>
+<p>Benjamin Hargarten – Softwareentwicklung (Projekt „Admota“)<br>
+c/o COCENTER, Koppoldstr. 1, 86551 Aichach, Deutschland<br>
+E-Mail und Datenschutzanfragen: <a href="mailto:kontakt@admota.de">kontakt@admota.de</a></p>
+<h2>2. Überblick</h2>
+<p>Admota zeigt eine Gruppe während einer gemeinsamen Fahrt auf einer Karte und gibt ihr eine einfache Kommunikation. Wir speichern und
+verarbeiten deine Daten auf eigenen Servern in der EU. Ausnahmen sind Dienste von Apple in der App: Anmeldung, Mitteilungen, Karten und
+Ortssuche sowie Siri. Es gibt keine Werbung, kein Tracking und keine Analyse-Werkzeuge von Dritten. Die Website setzt nur ein eigenes,
+technisch notwendiges Cookie.</p>
+<h2>3. Welche Daten wir verarbeiten und wozu</h2>
+<h3>3.1 Konto</h3>
+<ul>
+<li><strong>Mit Apple anmelden:</strong> Wir speichern die Kennung, die Apple für Admota vergibt, ohne E-Mail-Adresse.</li>
+<li><strong>Mit Google anmelden (nur auf der Website):</strong> Wir speichern die Google-Kennung, ohne E-Mail-Adresse.</li>
+<li><strong>Mit E-Mail und Passwort:</strong> Wir speichern die bestätigte E-Mail-Adresse und das Passwort nur als Prüfwert (Argon2id). Bis zur Bestätigung
+  liegt die Registrierung höchstens 24 Stunden in einem Zwischenspeicher. Bei der Wahl des Passworts prüfen wir, ob es in bekannten
+  Datenlecks vorkommt; dabei verlassen nur die ersten 5 Zeichen eines Prüfwerts unseren Server, nie das Passwort.</li>
+<li><strong>Anmeldung:</strong> Wir speichern nur einen Prüfwert deines Sitzungsschlüssels. Die Sitzung endet 30 Tage nach der letzten Nutzung.</li>
+</ul>
+<h3>3.2 Gast</h3>
+<p>Mit einer Einladung kannst du ohne Konto beitreten. Wir speichern dann einen Gast-Eintrag, deinen Anzeigenamen in der Gruppe und eine
+Sitzung. Einen Gast löschen wir 30 Tage nach der letzten Nutzung, sofern keine Fahrt läuft.</p>
+<h3>3.3 Gruppen und Mitglieder</h3>
+<ul>
+<li>Wir speichern den Gruppennamen, die Mitgliedschaften mit Anzeigename, Rolle und Beitrittszeitpunkt sowie Funktionen in einer Fahrt
+  (zum Beispiel Lead, Sweep). Einladungslinks speichern wir nur als Prüfwert, mit Gültigkeit und Zahl der Nutzungen.</li>
+<li>Die Mitglieder einer Gruppe sehen einander mit Anzeigename, Rolle, Beitrittszeitpunkt und dem Stand in einer laufenden Fahrt. Keine
+  E-Mail-Adresse, keine Kontodaten, kein „zuletzt aktiv“. Deinen Anzeigenamen wählst du je Gruppe selbst und kannst ihn jederzeit ändern
+  (in einer Gruppe oder in allen); frühere Nachrichten behalten den Namen, den du damals hattest. Einen Namen, den in der Gruppe schon jemand
+  trägt, kannst du nicht wählen.</li>
+<li>Admins können Mitglieder entfernen. Das wirkt wie ein Austritt: deine Fahrten und Positionen in dieser Gruppe werden gelöscht, Nachrichten
+  bleiben mit deinem Namen stehen (3.5).</li>
+</ul>
+<h3>3.4 Positionen während einer Fahrt</h3>
+<ul>
+<li>Nur während einer Fahrt, an der du teilnimmst (auch einer Solo-Fahrt), sendet die App laufend deine Position an unseren Server: Koordinaten,
+  Gerätezeit, Empfangszeit, Genauigkeit, Höhe, Geschwindigkeit, Richtung, Akkustand und ob du stehst.</li>
+<li>Wir speichern die Positionen und zeigen sie den anderen Teilnehmenden derselben Fahrt. Eine Gerätekennung sehen andere nie.</li>
+<li>Eine automatische Löschfrist für Positionen haben wir <strong>noch nicht eingeschaltet</strong>. Bis dahin bleiben sie gespeichert, bis du die Gruppe
+  verlässt, die Gruppe gelöscht wird oder du dein Konto löschst. Sobald die Frist gilt, ändern wir diesen Hinweis.</li>
+<li><strong>Zur Gruppe stoßen:</strong> Willst du später dazukommen, schlägt die App einen Treffpunkt auf der Route vor, den du vor der Spitze der Gruppe
+  erreichst. Dafür schickst du mit dieser einen Anfrage deine Position an uns; wir speichern sie nicht und protokollieren sie nicht. Die Spitze
+  bestimmen wir nur aus den Positionen der anderen, die du auf der Karte ohnehin siehst; du bekommst nur den Treffpunkt, nie ihre Positionen
+  oder ihren Verlauf.</li>
+<li>Die Freigabe des Standorts („Beim Verwenden“ oder „Immer“) erteilst du in iOS selbst und kannst sie dort jederzeit ändern.</li>
+</ul>
+<h3>3.4b Fahrten aufzeichnen (nur auf deinem Gerät)</h3>
+<p>Ist „Fahrten aufzeichnen“ eingeschaltet, zeichnet die App jede Navigation auf; du kannst eine Fahrt auch selbst mit ● starten. Wir sagen dir
+das, bevor die erste Aufzeichnung beginnt. Aufgezeichnete Fahrten bleiben <strong>nur auf diesem Gerät</strong> – sie gehen nie an uns oder an deine
+Gruppen. iOS schützt sie mit deinem Gerätecode; sie sind nicht in deinem iCloud-Backup und deshalb auf einem neuen iPhone nicht dabei (wichtige
+Fahrten kannst du als GPX sichern). Steht eine Aufzeichnung 120 Minuten still oder läuft sie 14 Stunden, endet sie von selbst. Du kannst jede
+Fahrt einzeln oder alle auf einmal löschen. Beim Export als GPX entscheidest du, ob Zeiten enthalten sind und ob Anfang und Ende gekürzt
+werden, und an wen du die Datei gibst. Fahrten, die du ohne Anmeldung aufgezeichnet hast, kannst du nach der Anmeldung in dein Konto
+übernehmen. Beim Abmelden wählst du, ob deine Fahrten auf dem Gerät bleiben oder gelöscht werden. Löschst du dein Konto, löschen wir alle
+Fahrten auf diesem Gerät.</p>
+<h3>3.5 Nachrichten und Chat</h3>
+<ul>
+<li>Mitglieder einer Gruppe können vorbereitete Ansagen und Textnachrichten (bis 1000 Zeichen) schreiben. Sie liegen <strong>im Klartext</strong> auf unserem
+  Server, ohne Ende-zu-Ende-Verschlüsselung, und sind für alle Mitglieder der Gruppe lesbar. Gespeichert werden außerdem dein Lesestand und
+  deine Chat-Einstellungen (stumm, Ruhezeit).</li>
+<li>Wer eine Gruppe verlässt oder entfernt wird, dessen Nachrichten bleiben mit dem damaligen Namen bis zum Ablauf der Speicherfrist der Gruppe
+  sichtbar; eine spätere Kontolöschung erfasst sie nicht. Eine automatische Löschfrist für Nachrichten haben wir noch nicht eingeschaltet
+  (§6).</li>
+<li><strong>Melden:</strong> Du kannst Nachrichten und Profilfotos anderer Mitglieder melden. Wir speichern, was gemeldet wurde, von wem, wann und den
+  Bearbeitungsstand. Zuerst sehen die Admins deiner Gruppe die Meldung. Reagiert dort niemand innerhalb von 24 Stunden (sofort, wenn ein
+  Admin gemeldet wird), sehen <strong>wir als Betreiber</strong> die gemeldete Nachricht mit Anzeigename bzw. das Foto, um sie auszublenden oder zu
+  entfernen; jeder Aufruf wird protokolliert. Eine gemeldete Nachricht bleibt bis zur Erledigung erhalten; Meldungen löschen wir 90 Tage nach
+  der Bearbeitung. Meldungen sind auf 30 je Stunde begrenzt.</li>
+<li><strong>Ausblenden und Blockieren:</strong> Admins können eine Nachricht für alle ausblenden; der Inhalt bleibt gespeichert wie die anderen
+  Nachrichten (§6). Wir speichern, wen du blockiert hast. Blockieren wirkt auf den Chat, nicht auf die Karte einer gemeinsamen Fahrt.</li>
+<li>Nachrichten werden vor dem Speichern gegen eine Wortliste geprüft.</li>
+</ul>
+<h3>3.6 Routen, GPX und Fahrt-Briefing</h3>
+<ul>
+<li>Wir speichern Gruppenrouten (berechnet oder als GPX hochgeladen, das Original unverändert), Wegpunkte und Routenoptionen sowie das
+  Briefing einer Gruppenroute mit Wetterwerten entlang der Strecke, Quelle und Stand. Briefings einer Solo-Fahrt speichern wir nicht.</li>
+<li>Routen und Briefings bleiben, bis Route, Fahrt oder Gruppe gelöscht werden.</li>
+<li><strong>Gemeinsame Route aus deinem Ziel:</strong> Startest du eine Ausfahrt mit einem eigenen Ziel, wird daraus die Route der Gruppe. Ziel und Route
+  liegen dann auf unserem Server und sind für alle Teilnehmenden der Ausfahrt sichtbar; wir fragen dich vorher („Dein Ziel und die Route sieht
+  die Gruppe.“). Das gilt auch für Ziele aus Favoriten, „Zuletzt“ oder „Zuhause“. Deine verschlüsselten Routen und Favoriten bleiben privat –
+  die Gruppe bekommt nur eine Kopie dieser einen Route, die wie die anderen Routen der Gruppe gespeichert bleibt (§6).</li>
+<li><strong>Route folgt der Leitung:</strong> Ist das eingestellt, passt sich die Route der Gruppe an, wenn die Leitung abweicht. Dafür nutzen wir die
+  Position der Leitung – nur solange sie in dieser Ausfahrt ihre Position teilt. Die Leitung sieht das in der App („Gruppe folgt dir“) und kann
+  es abschalten. Die anderen erfahren nur, dass sich die Route geändert hat, nicht wo die Leitung war. Frühere Fassungen der Route bleiben wie
+  die Route selbst gespeichert (§6).</li>
+<li>Routen, Wetter und Höhen berechnen wir auf unseren eigenen Servern; dafür geben wir nichts an andere weiter.</li>
+</ul>
+<h3>3.7 Favoriten, Touren und „Meine Routen“</h3>
+<ul>
+<li>Mit Konto werden Favoriten, Touren und gespeicherte Routen <strong>Ende-zu-Ende verschlüsselt</strong> abgeglichen. Wir speichern nur den verschlüsselten
+  Inhalt, keine Titel und keine Koordinaten. Nach einer Fahrt mit einer gespeicherten Route vermerkt die App in diesem verschlüsselten Eintrag
+  Datum und gefahrene Strecke, keine Positionen.</li>
+<li>Ohne Konto bleiben sie nur auf dem Gerät. Meldest du dich an, fragt die App, ob sie in dein Konto übernommen werden; ohne Antwort wird nichts
+  hochgeladen.</li>
+<li>Gelöschte Einträge entfernen wir nach 90 Tagen endgültig.</li>
+</ul>
+<h3>3.8 Mitteilungen</h3>
+<ul>
+<li>Für Mitteilungen speichern wir das Push-Token deines Geräts, die App-Kennung und die Umgebung. Zugestellt werden sie über den Apple Push
+  Notification Service.</li>
+<li>Eine Mitteilung enthält Gruppenname und Anzeigenamen. Bei Chat-Nachrichten zeigt sie standardmäßig <strong>Absender und Text</strong>; die Vorschau kannst
+  du in den Chat-Einstellungen ausschalten, dann steht dort nur „Neue Nachricht“. Die Zahl ungelesener Nachrichten am App-Symbol enthält keine
+  Inhalte.</li>
+<li>Keine Mitteilung bei Stummschaltung, in deiner Ruhezeit oder wenn du die Absenderin bzw. den Absender blockiert hast.</li>
+<li>Beendet die Leitung eine Ausfahrt für alle, bekommst du eine Mitteilung, auch wenn die App im Hintergrund ist. Sie nennt den Namen der
+  Gruppe nur, wenn du die Vorschau eingeschaltet hast, und nie einen Ort oder eine Person. Danach sendet dein Gerät für diese Ausfahrt keine
+  Position mehr.</li>
+</ul>
+<h3>3.9 Profilfoto</h3>
+<ul>
+<li>Du kannst ein Profilfoto hochladen und jederzeit löschen. Wir lesen es neu ein und speichern es <strong>ohne Metadaten</strong> (zum Beispiel Aufnahmeort)
+  mit 512 × 512 Pixeln. Angenommen werden JPEG und PNG bis 2 MB, höchstens 10 je Stunde.</li>
+<li>Es gibt ein Foto je Konto; dasselbe Foto sehen die Mitglieder aller deiner Gruppen, im Chat und auf der Karte. Ist ein Konto gesperrt, zeigen
+  wir sein Foto nicht mehr. Bei Missbrauch können wir ein Foto entfernen; das protokollieren wir ohne das Bild.</li>
+<li>Auf deinem Gerät hält die App Fotos deiner Gruppen in einem Zwischenspeicher, der beim Abmelden geleert wird.</li>
+</ul>
+<h3>3.10 Siri und Kurzbefehle</h3>
+<ul>
+<li>Du kannst Admota während einer Fahrt per Siri bzw. Kurzbefehl bedienen. Die Spracherkennung übernimmt Apple; Admota erhält nur den erkannten
+  Befehl, keine Sprachaufnahme.</li>
+<li>Während einer Fahrt wirken die Kurzbefehle auch bei gesperrtem Gerät. Befehle, die etwas an die Gruppe senden oder die Fahrt beenden, fragt
+  Siri vorher gesprochen nach; ohne Bestätigung geht nichts hinaus. Als Fahrerin bzw. Fahrer sendest du Nachrichten während der Fahrt nur so.</li>
+<li>Für eine per Sprache gesendete Ansage vermerken wir intern nur die Herkunft „Sprache“, ohne Inhalt.</li>
+</ul>
+<h3>3.11 Kontosperre</h3>
+<p>Bei Missbrauch können wir ein Konto sperren. Gespeichert werden Zeitpunkt, wer gesperrt hat (Kurzkennung), eine Kategorie und eine kurze Notiz.
+Mit der Löschung des Kontos entfällt die Sperre.</p>
+<h3>3.12 Betrieb und Sicherheit</h3>
+<ul>
+<li>Aktionen in unserer Verwaltung protokollieren wir mit Kurzkennungen, ohne Inhalte, Koordinaten oder IP-Adressen, 12 Monate lang. Suchen nach
+  Konten protokollieren wir nur als Art der Suche und Treffer ja/nein, nie den Suchbegriff.</li>
+<li>Unser Webserver protokolliert Zugriffe mit gekürzter IP-Adresse (IPv4 auf /24, IPv6 auf /48), ohne Cookies und Anmeldedaten, und nicht die
+  Abrufe von Kartenausschnitten. Die Protokolle werden nach Größe rotiert (je Dienst höchstens 3 × 10 MB).</li>
+<li>Zur Fehlersuche bei der Routenberechnung sichern wir Diagnosezeilen ohne Koordinaten 14 Tage lang.</li>
+<li>Zum Schutz vor Überlastung zählen wir Anfragen je IP-Bereich, nur als täglich wechselnden Prüfwert, nie als lesbare IP-Adresse; die Zähler
+  verfallen nach höchstens einer Stunde.</li>
+<li>Damit wir Störungen bemerken, schickt unser Server Mitteilungen an die Geräte der Betreiber; sie enthalten nur Kürzel und Zahlen, keine Daten
+  von Nutzerinnen und Nutzern.</li>
+</ul>
+<h3>3.13 Sicherungen</h3>
+<p>Wir sichern die Datenbank täglich und verschlüsselt auf einem eigenen Speichergerät. Gelöschte Daten können bis zu 6 Monate in Sicherungen
+verbleiben.</p>
+<h3>3.14 Website</h3>
+<p>Die Website verwendet nur das Cookie <code>admota_sitzung</code> für die Anmeldung (30 Tage, nur über HTTPS, nicht für Skripte lesbar).</p>
+<h3>3.15 Testprogramm</h3>
+<ul>
+<li>Tester nehmen wir nur auf Einladung auf. Für die Einladung speichern wir einen Namen bzw. eine Notiz und den Einladungscode nur als Prüfwert;
+  der Code gilt 7 Tage und nur einmal. Beim Einlösen verbinden wir die Einladung mit deinem Konto. Wir sehen, wann du zuletzt aktiv warst und
+  wann deine letzte Testfahrt war.</li>
+<li>Für eingeladene Tester speichern wir Name, Testfahrten mit Strecke, Gerät und iOS-Version sowie Antworten und Bewertungen. Strecken leeren wir
+  nach 90 Tagen; die übrigen Testdaten löschen wir mit dem Ende des Testprogramms oder deines Kontos.</li>
+<li>Für die Testversion lädt Apple (TestFlight) dich per E-Mail ein; dafür geben wir deinen Namen und deine E-Mail-Adresse bei Apple ein.</li>
+<li>Du kannst die Teilnahme jederzeit beenden.</li>
+</ul>
+<h2>4. Empfänger und Dienstleister</h2>
+<table>
+<thead>
+<tr>
+<th>Empfänger</th>
+<th>Zweck</th>
+<th>Daten</th>
+<th>Ort</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>netcup GmbH</td>
+<td>Hosting unseres Servers</td>
+<td>alle oben genannten Serverdaten</td>
+<td>Rechenzentrum der netcup GmbH in Deutschland</td>
+</tr>
+<tr>
+<td>Apple (Mit Apple anmelden)</td>
+<td>Anmeldung in der App</td>
+<td>Anmeldevorgang; wir erhalten die Kennung</td>
+<td>USA (siehe unten)</td>
+</tr>
+<tr>
+<td>Apple (Mitteilungen)</td>
+<td>Zustellung von Mitteilungen</td>
+<td>Push-Token, Inhalt der Mitteilung (beim Chat standardmäßig Absender und Text)</td>
+<td>USA (siehe unten)</td>
+</tr>
+<tr>
+<td>Apple (Karten und Ortssuche)</td>
+<td>Kartendarstellung und Suche in der App</td>
+<td>Kartenausschnitt, Suchbegriffe; beim Merken eines auf der Karte markierten Orts dessen Koordinate (Adresse nachschlagen)</td>
+<td>USA (siehe unten)</td>
+</tr>
+<tr>
+<td>Apple (Siri)</td>
+<td>Spracherkennung für Kurzbefehle</td>
+<td>gesprochener Befehl; Admota erhält nur den erkannten Befehl</td>
+<td>USA (siehe unten)</td>
+</tr>
+<tr>
+<td>Apple (TestFlight)</td>
+<td>Einladung und Verteilung der Testversion</td>
+<td>Name und E-Mail-Adresse der Tester</td>
+<td>USA (siehe unten)</td>
+</tr>
+<tr>
+<td>Google (nur Website)</td>
+<td>Anmeldung</td>
+<td>Anmeldevorgang; wir erhalten die Kennung</td>
+<td>USA (siehe unten)</td>
+</tr>
+<tr>
+<td>Have I Been Pwned (Pwned Passwords)</td>
+<td>Prüfung auf bekannte Passwörter</td>
+<td>5 Zeichen eines Prüfwerts, nie das Passwort; die Anfrage stellt unser Server</td>
+<td>Australien (Betreiber), ausgeliefert über Cloudflare</td>
+</tr>
+</tbody>
+</table>
+<p>Für Mitteilungen, die Anmeldung mit Apple oder Google und Karten nutzen wir Dienste von Anbietern in den USA.
+Dabei können Daten in die USA übermittelt werden; Grundlage ist der Angemessenheitsbeschluss der EU-Kommission (EU-US Data Privacy
+Framework) bzw. Standardvertragsklauseln des jeweiligen Anbieters. Unsere Server stehen in Deutschland. Die Passwortprüfung fragt unser Server bei Have I Been Pwned an; dabei gehen nur die ersten 5 Zeichen
+eines Prüfwerts hinaus – keine Daten, die auf dich schließen lassen, und nicht deine IP-Adresse.</p>
+<p>Ohne Weitergabe an andere betreiben wir selbst: die Routenberechnung, das Wetter (eigener Dienst mit Daten des Deutschen Wetterdienstes,
+abgefragt je Rasterzelle, ohne deine Position), die Orte entlang der Route (Auszug aus OpenStreetMap) und die Karten der Website.</p>
+<h2>5. Rechtsgrundlagen</h2>
+<ul>
+<li>Für die Nutzung von Admota (Konto, Gruppen, Fahrten, Positionen, Nachrichten, Routen, Mitteilungen) verarbeiten wir deine Daten, um den
+  Nutzungsvertrag mit dir zu erfüllen (Art. 6 Abs. 1 lit. b DSGVO).</li>
+<li>Für Sicherheit, Betrieb, Schutz vor Missbrauch und Moderation (Passwortprüfung, Bremsen, Protokolle, Sicherungen, Kontosperre, Melden)
+  stützen wir uns auf unser berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO).</li>
+<li>Für das Testprogramm (Testprotokoll, Fragen nach der Fahrt, Hochladen im Testmodus) fragen wir dich um deine Einwilligung (Art. 6 Abs. 1
+  lit. a DSGVO). Du kannst sie jederzeit widerrufen; dann laden wir nichts mehr hoch; deine Testdaten löschen wir mit dem Ende
+  des Testprogramms oder vorher auf Anfrage an kontakt@admota.de.</li>
+<li>Die Freigabe deines Standorts erteilst du in iOS selbst.</li>
+</ul>
+<h2>6. Speicherdauer</h2>
+<table>
+<thead>
+<tr>
+<th>Daten</th>
+<th>Frist</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Konto</td>
+<td>bis du es löschst</td>
+</tr>
+<tr>
+<td>Gast, Anmeldesitzung</td>
+<td>30 Tage nach der letzten Nutzung</td>
+</tr>
+<tr>
+<td>Registrierung ohne Bestätigung / Link zum Zurücksetzen</td>
+<td>24 Stunden / 60 Minuten</td>
+</tr>
+<tr>
+<td>Positionen einer Fahrt</td>
+<td>noch keine automatische Frist: bis du die Gruppe verlässt, die Gruppe gelöscht wird oder du dein Konto löschst</td>
+</tr>
+<tr>
+<td>Nachrichten</td>
+<td>noch keine automatische Frist: bis die Gruppe gelöscht wird oder du dein Konto löschst (Ausnahmen §7)</td>
+</tr>
+<tr>
+<td>Mitteilungs-Aufträge, abgelaufene Einladungen</td>
+<td>noch keine automatische Frist</td>
+</tr>
+<tr>
+<td>Routen, GPX, Briefing</td>
+<td>bis Route, Fahrt oder Gruppe gelöscht werden</td>
+</tr>
+<tr>
+<td>gelöschte Favoriten, Touren, Routen</td>
+<td>90 Tage</td>
+</tr>
+<tr>
+<td>Meldungen</td>
+<td>bis zur Erledigung, danach 90 Tage</td>
+</tr>
+<tr>
+<td>Blockierungen, Chat-Einstellungen</td>
+<td>bis zum Aufheben, Austritt oder Löschen des Kontos</td>
+</tr>
+<tr>
+<td>Profilfoto</td>
+<td>bis du es löschst, dein Konto löschst oder dein Gastzugang abläuft</td>
+</tr>
+<tr>
+<td>Verwaltungsprotokoll</td>
+<td>12 Monate</td>
+</tr>
+<tr>
+<td>Diagnosezeilen</td>
+<td>14 Tage</td>
+</tr>
+<tr>
+<td>Zähler zum Schutz vor Überlastung, Wetter-Zwischenspeicher</td>
+<td>höchstens 1 Stunde</td>
+</tr>
+<tr>
+<td>Sicherungen</td>
+<td>bis 6 Monate</td>
+</tr>
+<tr>
+<td>Testdaten</td>
+<td>Strecken 90 Tage; alles andere bis zum Ende des Testprogramms oder deines Kontos</td>
+</tr>
+</tbody>
+</table>
+<h2>7. Deine Rechte</h2>
+<ul>
+<li>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch (Art. 15–21 DSGVO) und kannst
+  dich bei einer Aufsichtsbehörde beschweren, zum Beispiel bei der Landesbeauftragten bzw. dem Landesbeauftragten für den
+  Datenschutz Niedersachsen, Prinzenstraße 5, 30159 Hannover, poststelle@lfd.niedersachsen.de.</li>
+<li><strong>Konto löschen:</strong> in der App unter Ich → „Konto löschen …“ und auf der Website unter „Konto“. Wir löschen sofort und endgültig: dein Konto
+  und deine Anmeldungen auf allen Geräten, deine Geräte samt Push-Kennung, in jeder Gruppe deine Mitgliedschaft, Fahrten, Positionen,
+  Einladungen und Nachrichten (eine Gruppe ohne weitere Mitglieder ganz; bist du letzter Admin, geht die Rolle an ein anderes Mitglied),
+  dein Profilfoto, deine Favoriten, Touren und gespeicherten Routen sowie deine Testdaten.</li>
+<li>Ausnahmen: Gemeldete Nachrichten bleiben bis zur Erledigung der Meldung ohne Bezug zu deinem Konto stehen. Nachrichten in Gruppen, die du
+  früher verlassen hast, bleiben mit dem damaligen Namen stehen. Einträge im Verwaltungsprotokoll bleiben mit einer
+  Kurzkennung ohne Bezug zu deinem Konto (12 Monate). In Sicherungen bleiben Daten bis zu deren Löschung (bis 6 Monate).</li>
+<li>Die Verbindung zu „Mit Apple anmelden“ trennst du in den Einstellungen deiner Apple-ID; App und Website zeigen dafür nach dem Löschen einen Link.</li>
+<li>Ein gesperrtes Konto kann sich nicht selbst löschen; wir löschen es auf Anfrage an kontakt@admota.de.</li>
+</ul>
+<h2>Diese Seite</h2>
+<p>Diese Seite (hargarten.net/admota) ist nicht die Admota-App und nicht unser Admota-Server. Sie wird über GitHub Pages bereitgestellt (GitHub, Inc., USA). Beim Aufruf verarbeitet GitHub technisch notwendige Zugriffsdaten, insbesondere deine IP-Adresse; wir selbst haben darauf keinen Zugriff. Diese Seite setzt keine Cookies und verwendet kein Tracking. Einzelheiten stehen in der <a href="../datenschutz.html">Datenschutzerklärung der Website</a>.</p>
+
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<p>© 2026 Benjamin Hargarten · <a href="../impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz Admota</a> · <a href="../datenschutz.html">Datenschutz dieser Website</a></p>
+</div>
+</footer>
+</body>
+</html>
