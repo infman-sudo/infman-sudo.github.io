@@ -19,26 +19,26 @@
 </header>
 <main id="inhalt" class="wrap page">
 <header class="page-header"><h1>Datenschutzhinweis Admota</h1></header>
-<p class="muted">Fassung 1.1 zu App 0.30 · Stand 23. Oktober 2026</p>
+<p class="muted">Fassung 2 zu App 0.31 · Stand 24. Oktober 2026</p>
 <p class="muted">Dieser Hinweis gilt für die App Admota und ihre Server. Für diese Webseite (hargarten.net, bereitgestellt über GitHub Pages) gilt die <a href="../datenschutz.html">Datenschutzerklärung der Website</a>.</p>
 <section class="ds">
 <h2>Kurzfassung</h2>
 <ul>
 <li><strong>Wer ist verantwortlich:</strong> Benjamin Hargarten, Postanschrift in Aichach. Fragen zum Datenschutz an kontakt@admota.de.</li>
-<li><strong>Was wir verarbeiten:</strong> dein Konto, deine Gruppen, Nachrichten und Routen deiner Gruppen und deine Position – <strong>nur, solange du mit einer Gruppe mitfährst oder allein „an Admota senden“ eingeschaltet hast</strong> (und einmal, wenn du „Zur Gruppe stoßen“ nutzt).</li>
+<li><strong>Was wir verarbeiten:</strong> dein Konto, deine Gruppen, Nachrichten und Routen deiner Gruppen und deine Position – <strong>nur, solange du sie mit einer Gruppe teilst (je Gruppe ein- und ausschaltbar), bei einer Ausfahrt mitfährst oder allein „an Admota senden“ eingeschaltet hast</strong> (und einmal, wenn du „Zur Gruppe stoßen“ nutzt).</li>
 <li><strong>Wo es liegt:</strong> auf unseren eigenen Servern in der EU. Apple ist beteiligt bei Anmeldung, Mitteilungen, Karten und Siri.</li>
 <li><strong>Wer es sieht:</strong> die Mitglieder der jeweiligen Gruppe. Erlaubst du Mitteilungen, zeigt dein Gerät Absender und Text auch auf dem Sperrbildschirm (zugestellt über Apple). Keine Werbung, kein Tracking, keine Analyse-Werkzeuge von Dritten.</li>
 <li><strong>Wie du löschst:</strong> in der App unter Ich → „Konto löschen …“ – sofort und endgültig.</li>
 </ul>
 <h2>1. Verantwortlicher</h2>
-<p>Benjamin Hargarten – Softwareentwicklung (Projekt „Admota“)<br>
-c/o COCENTER, Koppoldstr. 1, 86551 Aichach, Deutschland<br>
+<p>Benjamin Hargarten – Softwareentwicklung (Projekt „Admota“)<br />
+c/o COCENTER, Koppoldstr. 1, 86551 Aichach, Deutschland<br />
 E-Mail und Datenschutzanfragen: <a href="mailto:kontakt@admota.de">kontakt@admota.de</a></p>
 <h2>2. Überblick</h2>
 <p>Admota zeigt eine Gruppe während einer gemeinsamen Fahrt auf einer Karte und gibt ihr eine einfache Kommunikation. Wir speichern und
 verarbeiten deine Daten auf eigenen Servern in der EU. Ausnahmen sind Dienste von Apple in der App: Anmeldung, Mitteilungen, Karten und
-Ortssuche sowie Siri. Es gibt keine Werbung, kein Tracking und keine Analyse-Werkzeuge von Dritten. Die Website setzt nur ein eigenes,
-technisch notwendiges Cookie.</p>
+Ortssuche sowie Siri. Es gibt keine Werbung, kein Tracking und keine Analyse-Werkzeuge von Dritten. Die Admota-Website (Anmeldung im Browser)
+setzt nur ein eigenes, technisch notwendiges Cookie.</p>
 <h2>3. Welche Daten wir verarbeiten und wozu</h2>
 <h3>3.1 Konto</h3>
 <ul>
@@ -47,7 +47,8 @@ technisch notwendiges Cookie.</p>
 <li><strong>Mit E-Mail und Passwort:</strong> Wir speichern die bestätigte E-Mail-Adresse und das Passwort nur als Prüfwert (Argon2id). Bis zur Bestätigung
   liegt die Registrierung höchstens 24 Stunden in einem Zwischenspeicher. Bei der Wahl des Passworts prüfen wir, ob es in bekannten
   Datenlecks vorkommt; dabei verlassen nur die ersten 5 Zeichen eines Prüfwerts unseren Server, nie das Passwort.</li>
-<li><strong>Anmeldung:</strong> Wir speichern nur einen Prüfwert deines Sitzungsschlüssels, dazu die Art deines Geräts (iPhone oder iPad), damit wir dir sagen können, auf welchem Gerät du mitfährst; den Namen deines Geräts speichern wir nicht. Die Sitzung endet 30 Tage nach der letzten Nutzung.</li>
+<li><strong>Anmeldung:</strong> Wir speichern nur einen Prüfwert deines Sitzungsschlüssels, dazu die Art deines Geräts (iPhone oder iPad), damit wir dir sagen
+  können, auf welchem Gerät du mitfährst; den Namen deines Geräts speichern wir nicht. Die Sitzung endet 30 Tage nach der letzten Nutzung.</li>
 </ul>
 <h3>3.2 Gast</h3>
 <p>Mit einer Einladung kannst du ohne Konto beitreten. Wir speichern dann einen Gast-Eintrag, deinen Anzeigenamen in der Gruppe und eine
@@ -63,14 +64,23 @@ Sitzung. Einen Gast löschen wir 30 Tage nach der letzten Nutzung, sofern keine 
 <li>Admins können Mitglieder entfernen. Das wirkt wie ein Austritt: deine Fahrten und Positionen in dieser Gruppe werden gelöscht, Nachrichten
   bleiben mit deinem Namen stehen (3.5).</li>
 </ul>
-<h3>3.4 Positionen während einer Fahrt</h3>
+<h3>3.4 Deine Position</h3>
 <ul>
-<li>Nur während einer Fahrt, an der du teilnimmst (auch einer Solo-Fahrt), sendet die App laufend deine Position an unseren Server: Koordinaten,
-  Gerätezeit, Empfangszeit, Genauigkeit, Höhe, Geschwindigkeit, Richtung, Akkustand und ob du stehst.</li>
-<li>Wir speichern die Positionen und zeigen sie den anderen Teilnehmenden derselben Fahrt. Eine Gerätekennung sehen andere nie.</li>
-<li>Deine Position teilt immer nur das Gerät, mit dem du mitfährst. Fährst du auf einem anderen Gerät weiter, teilt das vorige nichts mehr.</li>
-<li>Eine automatische Löschfrist für Positionen haben wir <strong>noch nicht eingeschaltet</strong>. Bis dahin bleiben sie gespeichert, bis du die Gruppe
-  verlässt, die Gruppe gelöscht wird oder du dein Konto löschst. Sobald die Frist gilt, ändern wir diesen Hinweis.</li>
+<li>Deine Position teilst du <strong>je Gruppe</strong>. Du schaltest das Teilen für jede Gruppe selbst ein und aus; mit „Alle stoppen“ beendest du es überall
+  auf einmal. Unter „Wer sieht mich“ siehst du jederzeit, mit welchen Gruppen du gerade teilst. Fährst du bei einer Ausfahrt mit, teilst du
+  deine Position mit dieser Gruppe, bis deine Mitfahrt endet. Deine Position teilt immer nur <strong>ein</strong> Gerät: Teilst oder fährst du auf einem
+  anderen Gerät, fragt die App, bevor es übernimmt; das vorige teilt dann nichts mehr. Meldest du dich ab, endet das Teilen dieses Geräts.</li>
+<li>Solange du teilst, mitfährst oder allein „an Admota senden“ eingeschaltet hast, sendet die App laufend deine Position an unseren Server:
+  Koordinaten, Gerätezeit, Empfangszeit, Genauigkeit, Höhe, Geschwindigkeit, Richtung, Akkustand und ob du stehst.</li>
+<li>Eine Gruppe sieht deine Position <strong>nur, solange du für sie eingeschaltet hast</strong> – nie davor und nie danach. Wir speichern jeden Standort nur
+  einmal, egal in wie vielen Gruppen du teilst. Wer ohne Ausfahrt teilt, erscheint bei den Mitgliedern der Gruppe nur mit der aktuellen
+  Position, ohne Verlauf. Eine Gerätekennung sehen andere nie.</li>
+<li>Nach 120 Minuten ohne Bewegung oder spätestens nach 14 Stunden endet das Teilen in allen Gruppen; du bekommst dazu eine Mitteilung.</li>
+<li>Admins einer Gruppe können das Teilen außerhalb einer Ausfahrt dort erlauben oder abschalten, aber nie für dich einschalten; wer bei einer
+  Ausfahrt mitfährt, teilt mit ihr, bis die Mitfahrt endet.</li>
+<li>Was keine Gruppe mehr sehen darf, zeigen wir niemandem mehr. Sofort gelöscht wird es, wenn du die Gruppe verlässt oder entfernt wirst, wenn
+  die Gruppe gelöscht wird oder wenn du dein Konto löschst. Eine automatische Löschfrist für Positionen haben wir <strong>noch nicht
+  eingeschaltet</strong>; sobald sie gilt, ändern wir diesen Hinweis.</li>
 <li><strong>Zur Gruppe stoßen:</strong> Willst du später dazukommen, schlägt die App einen Treffpunkt auf der Route vor, den du vor der Spitze der Gruppe
   erreichst. Dafür schickst du mit dieser einen Anfrage deine Position an uns; wir speichern sie nicht und protokollieren sie nicht. Die Spitze
   bestimmen wir nur aus den Positionen der anderen, die du auf der Karte ohnehin siehst; du bekommst nur den Treffpunkt, nie ihre Positionen
@@ -99,10 +109,16 @@ Fahrten auf diesem Gerät.</p>
   Admin gemeldet wird), sehen <strong>wir als Betreiber</strong> die gemeldete Nachricht mit Anzeigename bzw. das Foto, um sie auszublenden oder zu
   entfernen; jeder Aufruf wird protokolliert. Eine gemeldete Nachricht bleibt bis zur Erledigung erhalten; Meldungen löschen wir 90 Tage nach
   der Bearbeitung. Meldungen sind auf 30 je Stunde begrenzt.</li>
-<li><strong>Eigene Nachrichten löschen:</strong> Du kannst eine eigene Nachricht jederzeit für alle löschen. Wir entfernen ihren Text sofort aus unserer Datenbank; sichtbar bleibt der Hinweis „Nachricht gelöscht“. Ist die Nachricht gemeldet, bewahren wir den Inhalt bis zur Erledigung der Meldung und danach 90 Tage auf. Eine bereits angezeigte Mitteilung kann auf anderen Geräten noch sichtbar sein.</li>
+<li><strong>Eigene Nachrichten löschen:</strong> Du kannst eine eigene Nachricht jederzeit für alle löschen. Wir entfernen ihren Text sofort aus unserer
+  Datenbank; sichtbar bleibt der Hinweis „Nachricht gelöscht“. Ist die Nachricht gemeldet, bewahren wir den Inhalt bis zur Erledigung der
+  Meldung und danach 90 Tage auf. Eine bereits angezeigte Mitteilung kann auf anderen Geräten noch sichtbar sein.</li>
 <li><strong>Ausblenden und Blockieren:</strong> Admins können eine Nachricht für alle ausblenden; der Inhalt bleibt gespeichert wie die anderen
   Nachrichten (§6). Wir speichern, wen du blockiert hast. Blockieren wirkt auf den Chat, nicht auf die Karte einer gemeinsamen Fahrt.</li>
 <li>Nachrichten werden vor dem Speichern gegen eine Wortliste geprüft.</li>
+<li><strong>Ansagen:</strong> Wer in deiner Gruppe eine Rolle mit Ansage-Recht hat (z. B. Leitung), kann Ansagen schicken; die neueste steht oben im Chat,
+  bis sie gelöst wird. Ansagen erreichen dich auch, wenn du den Chat stumm geschaltet hast, nicht aber in deiner Ruhezeit. Blockieren blendet
+  Ansagen nicht aus; hast du die Absenderin bzw. den Absender blockiert, nennt die Mitteilung nur die Gruppe, weder Absender noch Text. Melden kannst du Ansagen
+  wie jede Nachricht.</li>
 </ul>
 <h3>3.6 Routen, GPX und Fahrt-Briefing</h3>
 <ul>
@@ -113,11 +129,28 @@ Fahrten auf diesem Gerät.</p>
   liegen dann auf unserem Server und sind für alle Teilnehmenden der Ausfahrt sichtbar; wir fragen dich vorher („Dein Ziel und die Route sieht
   die Gruppe.“). Das gilt auch für Ziele aus Favoriten, „Zuletzt“ oder „Zuhause“. Deine verschlüsselten Routen und Favoriten bleiben privat –
   die Gruppe bekommt nur eine Kopie dieser einen Route, die wie die anderen Routen der Gruppe gespeichert bleibt (§6).</li>
-<li><strong>Route folgt der Leitung:</strong> Ist das eingestellt, passt sich die Route der Gruppe an, wenn die Leitung abweicht. Dafür nutzen wir die
+<li><strong>Route folgt der Leitung:</strong> Ist das für die Gruppe oder für diese Ausfahrt eingestellt, passt sich die Route der Gruppe an, wenn die Leitung abweicht. Dafür nutzen wir die
   Position der Leitung – nur solange sie in dieser Ausfahrt ihre Position teilt. Die Leitung sieht das in der App („Gruppe folgt dir“) und kann
-  es abschalten. Die anderen erfahren nur, dass sich die Route geändert hat, nicht wo die Leitung war. Frühere Fassungen der Route bleiben wie
+  es jederzeit abschalten; einschalten kann es während der Ausfahrt nur sie selbst, und wechselt die Leitung, gilt zunächst wieder „Route bleibt“. Die anderen erfahren nur, dass sich die Route geändert hat, nicht wo die Leitung war. Frühere Fassungen der Route bleiben wie
   die Route selbst gespeichert (§6).</li>
 <li>Routen, Wetter und Höhen berechnen wir auf unseren eigenen Servern; dafür geben wir nichts an andere weiter.</li>
+</ul>
+<h3>3.6a Copilot: Vorschläge entlang der Route</h3>
+<ul>
+<li>Während einer Solo-Fahrt mit Zielführung (nicht zu Fuß) schlägt dir Copilot Orte entlang deiner Route vor, zum Beispiel Tankstellen, Rastplätze, Cafés,
+  Pässe und Aussichtspunkte; auf Offroad-Strecken weist er auf Furten hin. Copilot ist eingeschaltet, bis du ihn unter Ich → Einstellungen →
+  Copilot ausschaltest; dann fragt die App nichts mehr ab. In einer Gruppenfahrt fragt die App nicht ab.</li>
+<li>Dafür schickt die App den <strong>vor dir liegenden Teil deiner Route</strong> an unseren Server: als Linie mit den erwarteten Fahrzeiten, höchstens für
+  die nächsten zwei Stunden. Ein eigener Standort wird nicht zusätzlich gesendet; der Anfang der Linie ist aber der Ort, an dem du dich gerade
+  befindest.</li>
+<li>Der Server wählt die Orte aus und berechnet für die angezeigten Vorschläge den Umweg. <strong>Wir speichern weder die Route noch die Vorschläge.</strong>
+  Das Protokoll des Servers enthält nur Zahlen wie die Anzahl der Abschnitte und Orte und die Dauer, keine Koordinaten, Ortsnamen oder
+  Ort-Kennungen.</li>
+<li>Damit gleiche Umwege nicht immer neu berechnet werden, merkt sich der Server berechnete Umwege höchstens 30 Minuten in einem
+  Zwischenspeicher. Der Schlüssel ist ein Prüfwert aus dem Ort und gerundeten Punkten der Route, ohne Kennung von dir und ohne lesbare
+  Koordinaten; der Zwischenspeicher liegt nur bei uns im privaten Netz.</li>
+<li>Die Orte stammen aus OpenStreetMap (© OpenStreetMap-Mitwirkende, Open Database License), die wir vorab auf unseren Server laden. Während der
+  Fahrt fragen weder die App noch der Server externe Dienste nach Orten. Copilot gibt es nur mit Konto; die Zahl der Abrufe ist begrenzt.</li>
 </ul>
 <h3>3.7 Favoriten, Touren und „Meine Routen“</h3>
 <ul>
@@ -135,7 +168,9 @@ Fahrten auf diesem Gerät.</p>
 <li>Eine Mitteilung enthält Gruppenname und Anzeigenamen. Bei Chat-Nachrichten zeigt sie standardmäßig <strong>Absender und Text</strong>; die Vorschau kannst
   du in den Chat-Einstellungen ausschalten, dann steht dort nur „Neue Nachricht“. Die Zahl ungelesener Nachrichten am App-Symbol enthält keine
   Inhalte.</li>
-<li>Keine Mitteilung bei Stummschaltung, in deiner Ruhezeit oder wenn du die Absenderin bzw. den Absender blockiert hast.</li>
+<li>Keine Mitteilung bei Stummschaltung, in deiner Ruhezeit oder wenn du die Absenderin bzw. den Absender blockiert hast (Ansagen: 3.5).</li>
+<li>Endet dein Teilen von selbst (Stillstand, Pause, Höchstdauer) oder hat ein Admin das Teilen in der Gruppe abgeschaltet, bekommst du eine
+  Mitteilung bzw. einen Hinweis in der App, ohne Ort.</li>
 <li>Beendet die Leitung eine Ausfahrt für alle, bekommst du eine Mitteilung, auch wenn die App im Hintergrund ist. Sie nennt den Namen der
   Gruppe nur, wenn du die Vorschau eingeschaltet hast, und nie einen Ort oder eine Person. Danach sendet dein Gerät für diese Ausfahrt keine
   Position mehr.</li>
@@ -166,6 +201,8 @@ Mit der Löschung des Kontos entfällt die Sperre.</p>
 <li>Unser Webserver protokolliert Zugriffe mit gekürzter IP-Adresse (IPv4 auf /24, IPv6 auf /48), ohne Cookies und Anmeldedaten, und nicht die
   Abrufe von Kartenausschnitten. Die Protokolle werden nach Größe rotiert (je Dienst höchstens 3 × 10 MB).</li>
 <li>Zur Fehlersuche bei der Routenberechnung sichern wir Diagnosezeilen ohne Koordinaten 14 Tage lang.</li>
+<li>Zur Fehlersuche sehen wir uns Protokolle im Einzelfall an – nur die nötigen Zeilen und ohne Inhalte deiner Nachrichten oder
+  Positionen.</li>
 <li>Zum Schutz vor Überlastung zählen wir Anfragen je IP-Bereich, nur als täglich wechselnden Prüfwert, nie als lesbare IP-Adresse; die Zähler
   verfallen nach höchstens einer Stunde.</li>
 <li>Damit wir Störungen bemerken, schickt unser Server Mitteilungen an die Geräte der Betreiber; sie enthalten nur Kürzel und Zahlen, keine Daten
@@ -174,8 +211,8 @@ Mit der Löschung des Kontos entfällt die Sperre.</p>
 <h3>3.13 Sicherungen</h3>
 <p>Wir sichern die Datenbank täglich und verschlüsselt auf einem eigenen Speichergerät. Gelöschte Daten können bis zu 6 Monate in Sicherungen
 verbleiben.</p>
-<h3>3.14 Website</h3>
-<p>Die Website verwendet nur das Cookie <code>admota_sitzung</code> für die Anmeldung (30 Tage, nur über HTTPS, nicht für Skripte lesbar).</p>
+<h3>3.14 Admota-Website</h3>
+<p>Die Admota-Website (Anmeldung im Browser) verwendet nur das Cookie <code>admota_sitzung</code> für die Anmeldung (30 Tage, nur über HTTPS, nicht für Skripte lesbar).</p>
 <h3>3.15 Testprogramm</h3>
 <ul>
 <li>Tester nehmen wir nur auf Einladung auf. Für die Einladung speichern wir einen Namen bzw. eine Notiz und den Einladungscode nur als Prüfwert;
@@ -286,7 +323,7 @@ abgefragt je Rasterzelle, ohne deine Position), die Orte entlang der Route (Ausz
 <td>24 Stunden / 60 Minuten</td>
 </tr>
 <tr>
-<td>Positionen einer Fahrt</td>
+<td>Positionen (Mitfahren, Teilen, Solo)</td>
 <td>noch keine automatische Frist: bis du die Gruppe verlässt, die Gruppe gelöscht wird oder du dein Konto löschst</td>
 </tr>
 <tr>
