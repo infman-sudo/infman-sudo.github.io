@@ -19,7 +19,7 @@
 </header>
 <main id="inhalt" class="wrap page">
 <header class="page-header"><h1>Datenschutzhinweis Admota</h1></header>
-<p class="muted">Fassung 2 zu App 0.31 · Stand 24. Oktober 2026</p>
+<p class="muted">Fassung 3 zu App 0.32 · Stand 25. Oktober 2026</p>
 <p class="muted">Dieser Hinweis gilt für die App Admota und ihre Server. Für diese Webseite (hargarten.net, bereitgestellt über GitHub Pages) gilt die <a href="../datenschutz.html">Datenschutzerklärung der Website</a>.</p>
 <section class="ds">
 <h2>Kurzfassung</h2>
@@ -47,8 +47,7 @@ setzt nur ein eigenes, technisch notwendiges Cookie.</p>
 <li><strong>Mit E-Mail und Passwort:</strong> Wir speichern die bestätigte E-Mail-Adresse und das Passwort nur als Prüfwert (Argon2id). Bis zur Bestätigung
   liegt die Registrierung höchstens 24 Stunden in einem Zwischenspeicher. Bei der Wahl des Passworts prüfen wir, ob es in bekannten
   Datenlecks vorkommt; dabei verlassen nur die ersten 5 Zeichen eines Prüfwerts unseren Server, nie das Passwort.</li>
-<li><strong>Anmeldung:</strong> Wir speichern nur einen Prüfwert deines Sitzungsschlüssels, dazu die Art deines Geräts (iPhone oder iPad), damit wir dir sagen
-  können, auf welchem Gerät du mitfährst; den Namen deines Geräts speichern wir nicht. Die Sitzung endet 30 Tage nach der letzten Nutzung.</li>
+<li><strong>Anmeldung:</strong> Wir speichern nur einen Prüfwert deines Sitzungsschlüssels. Die Sitzung endet 30 Tage nach der letzten Nutzung.</li>
 </ul>
 <h3>3.2 Gast</h3>
 <p>Mit einer Einladung kannst du ohne Konto beitreten. Wir speichern dann einen Gast-Eintrag, deinen Anzeigenamen in der Gruppe und eine
@@ -68,8 +67,7 @@ Sitzung. Einen Gast löschen wir 30 Tage nach der letzten Nutzung, sofern keine 
 <ul>
 <li>Deine Position teilst du <strong>je Gruppe</strong>. Du schaltest das Teilen für jede Gruppe selbst ein und aus; mit „Alle stoppen“ beendest du es überall
   auf einmal. Unter „Wer sieht mich“ siehst du jederzeit, mit welchen Gruppen du gerade teilst. Fährst du bei einer Ausfahrt mit, teilst du
-  deine Position mit dieser Gruppe, bis deine Mitfahrt endet. Deine Position teilt immer nur <strong>ein</strong> Gerät: Teilst oder fährst du auf einem
-  anderen Gerät, fragt die App, bevor es übernimmt; das vorige teilt dann nichts mehr. Meldest du dich ab, endet das Teilen dieses Geräts.</li>
+  deine Position mit dieser Gruppe, bis deine Mitfahrt endet.</li>
 <li>Solange du teilst, mitfährst oder allein „an Admota senden“ eingeschaltet hast, sendet die App laufend deine Position an unseren Server:
   Koordinaten, Gerätezeit, Empfangszeit, Genauigkeit, Höhe, Geschwindigkeit, Richtung, Akkustand und ob du stehst.</li>
 <li>Eine Gruppe sieht deine Position <strong>nur, solange du für sie eingeschaltet hast</strong> – nie davor und nie danach. Wir speichern jeden Standort nur
@@ -87,15 +85,24 @@ Sitzung. Einen Gast löschen wir 30 Tage nach der letzten Nutzung, sofern keine 
   oder ihren Verlauf.</li>
 <li>Die Freigabe des Standorts („Beim Verwenden“ oder „Immer“) erteilst du in iOS selbst und kannst sie dort jederzeit ändern.</li>
 </ul>
-<h3>3.4b Fahrten aufzeichnen (nur auf deinem Gerät)</h3>
+<h3>3.4b Fahrten aufzeichnen</h3>
 <p>Ist „Fahrten aufzeichnen“ eingeschaltet, zeichnet die App jede Navigation auf; du kannst eine Fahrt auch selbst mit ● starten. Wir sagen dir
-das, bevor die erste Aufzeichnung beginnt. Aufgezeichnete Fahrten bleiben <strong>nur auf diesem Gerät</strong> – sie gehen nie an uns oder an deine
-Gruppen. iOS schützt sie mit deinem Gerätecode; sie sind nicht in deinem iCloud-Backup und deshalb auf einem neuen iPhone nicht dabei (wichtige
-Fahrten kannst du als GPX sichern). Steht eine Aufzeichnung 120 Minuten still oder läuft sie 14 Stunden, endet sie von selbst. Du kannst jede
-Fahrt einzeln oder alle auf einmal löschen. Beim Export als GPX entscheidest du, ob Zeiten enthalten sind und ob Anfang und Ende gekürzt
-werden, und an wen du die Datei gibst. Fahrten, die du ohne Anmeldung aufgezeichnet hast, kannst du nach der Anmeldung in dein Konto
-übernehmen. Beim Abmelden wählst du, ob deine Fahrten auf dem Gerät bleiben oder gelöscht werden. Löschst du dein Konto, löschen wir alle
-Fahrten auf diesem Gerät.</p>
+das, bevor die erste Aufzeichnung beginnt. Steht eine Aufzeichnung 120 Minuten still oder läuft sie 14 Stunden, endet sie von selbst.
+- <strong>Abgleich zwischen deinen Geräten:</strong> Mit Konto gleichen wir deine aufgezeichneten Fahrten <strong>Ende-zu-Ende verschlüsselt</strong> über unseren
+  Server zwischen deinen Geräten ab – auch Fahrten, die du schon vor dieser Fassung aufgezeichnet hast. Bevor die App zum ersten Mal Fahrten
+  hochlädt, sagt sie dir das; bis dahin geht nichts hinaus. Wir sehen den Inhalt nicht, nur dass, wann und in welcher groben Größenstufe etwas gespeichert wurde. Deine Gruppen
+  bekommen deine Fahrten nie.
+- <strong>Ausschalten:</strong> unter Ich → Einstellungen → Fahrten aufzeichnen → „Auf deinen Geräten abgleichen“. Dann lädt die App nichts mehr hoch; wir
+  fragen, ob wir die verschlüsselten Kopien bei uns löschen sollen (vorausgewählt: löschen). Auf diesem Gerät bleiben die Fahrten;
+  wählst du „Löschen“, löschen deine anderen Geräte ihre Fahrten aus dem Abgleich ebenfalls.
+- Ohne Konto bleiben Fahrten nur auf diesem Gerät; Fahrten, die du ohne Anmeldung aufgezeichnet hast, kannst du nach der Anmeldung in dein
+  Konto übernehmen. Auf dem Gerät schützt iOS sie mit deinem Gerätecode; im iCloud-Backup sind sie nicht – mit Konto kommen sie über den
+  Abgleich auf ein neues Gerät.
+- Du kannst jede Fahrt einzeln oder alle auf einmal löschen; das gilt auf allen deinen Geräten. Den verschlüsselten Inhalt löschen wir
+  dabei sofort, einen Löschvermerk ohne Inhalt nach 90 Tagen. Beim Export als GPX entscheidest du, ob Zeiten
+  enthalten sind und ob Anfang und Ende gekürzt werden, und an wen du die Datei gibst. Beim Abmelden wählst du, ob die Fahrten auf dem Gerät
+  bleiben oder gelöscht werden; die verschlüsselten Kopien bleiben deinem Konto. Löschst du dein Konto, löschen wir alle Fahrten auf diesem
+  Gerät und bei uns.</p>
 <h3>3.5 Nachrichten und Chat</h3>
 <ul>
 <li>Mitglieder einer Gruppe können vorbereitete Ansagen und Textnachrichten (bis 1000 Zeichen) schreiben. Sie liegen <strong>im Klartext</strong> auf unserem
@@ -109,9 +116,6 @@ Fahrten auf diesem Gerät.</p>
   Admin gemeldet wird), sehen <strong>wir als Betreiber</strong> die gemeldete Nachricht mit Anzeigename bzw. das Foto, um sie auszublenden oder zu
   entfernen; jeder Aufruf wird protokolliert. Eine gemeldete Nachricht bleibt bis zur Erledigung erhalten; Meldungen löschen wir 90 Tage nach
   der Bearbeitung. Meldungen sind auf 30 je Stunde begrenzt.</li>
-<li><strong>Eigene Nachrichten löschen:</strong> Du kannst eine eigene Nachricht jederzeit für alle löschen. Wir entfernen ihren Text sofort aus unserer
-  Datenbank; sichtbar bleibt der Hinweis „Nachricht gelöscht“. Ist die Nachricht gemeldet, bewahren wir den Inhalt bis zur Erledigung der
-  Meldung und danach 90 Tage auf. Eine bereits angezeigte Mitteilung kann auf anderen Geräten noch sichtbar sein.</li>
 <li><strong>Ausblenden und Blockieren:</strong> Admins können eine Nachricht für alle ausblenden; der Inhalt bleibt gespeichert wie die anderen
   Nachrichten (§6). Wir speichern, wen du blockiert hast. Blockieren wirkt auf den Chat, nicht auf die Karte einer gemeinsamen Fahrt.</li>
 <li>Nachrichten werden vor dem Speichern gegen eine Wortliste geprüft.</li>
@@ -122,8 +126,8 @@ Fahrten auf diesem Gerät.</p>
 </ul>
 <h3>3.6 Routen, GPX und Fahrt-Briefing</h3>
 <ul>
-<li>Wir speichern Gruppenrouten (berechnet oder als GPX hochgeladen, das Original unverändert), Wegpunkte und Routenoptionen sowie das
-  Briefing einer Gruppenroute mit Wetterwerten entlang der Strecke, Quelle und Stand. Briefings einer Solo-Fahrt speichern wir nicht.</li>
+<li>Wir speichern Gruppenrouten (berechnet oder als GPX hochgeladen, das Original unverändert), Wegpunkte und Routenoptionen (bei einer Route in
+  Abschnitten auch die gewählte Variante je Abschnitt) sowie das Briefing einer Gruppenroute mit Wetterwerten entlang der Strecke, Quelle und Stand. Briefings einer Solo-Fahrt speichern wir nicht.</li>
 <li>Routen und Briefings bleiben, bis Route, Fahrt oder Gruppe gelöscht werden.</li>
 <li><strong>Gemeinsame Route aus deinem Ziel:</strong> Startest du eine Ausfahrt mit einem eigenen Ziel, wird daraus die Route der Gruppe. Ziel und Route
   liegen dann auf unserem Server und sind für alle Teilnehmenden der Ausfahrt sichtbar; wir fragen dich vorher („Dein Ziel und die Route sieht
@@ -133,13 +137,17 @@ Fahrten auf diesem Gerät.</p>
   Position der Leitung – nur solange sie in dieser Ausfahrt ihre Position teilt. Die Leitung sieht das in der App („Gruppe folgt dir“) und kann
   es jederzeit abschalten; einschalten kann es während der Ausfahrt nur sie selbst, und wechselt die Leitung, gilt zunächst wieder „Route bleibt“. Die anderen erfahren nur, dass sich die Route geändert hat, nicht wo die Leitung war. Frühere Fassungen der Route bleiben wie
   die Route selbst gespeichert (§6).</li>
+<li>Für jede Routenberechnung schickt die App Start, Ziel und Zwischenpunkte sowie die Einstellungen deines Fahrzeugs (Höchstgeschwindigkeit,
+  Meiden, Fahrzeiten-Faktor) an unseren Server. Bei einer Solo-Fahrt speichern wir davon nichts; den Fahrzeiten-Faktor speichern wir auch
+  bei einer Gruppenroute nicht.</li>
 <li>Routen, Wetter und Höhen berechnen wir auf unseren eigenen Servern; dafür geben wir nichts an andere weiter.</li>
 </ul>
 <h3>3.6a Copilot: Vorschläge entlang der Route</h3>
 <ul>
 <li>Während einer Solo-Fahrt mit Zielführung (nicht zu Fuß) schlägt dir Copilot Orte entlang deiner Route vor, zum Beispiel Tankstellen, Rastplätze, Cafés,
   Pässe und Aussichtspunkte; auf Offroad-Strecken weist er auf Furten hin. Copilot ist eingeschaltet, bis du ihn unter Ich → Einstellungen →
-  Copilot ausschaltest; dann fragt die App nichts mehr ab. In einer Gruppenfahrt fragt die App nicht ab.</li>
+  Copilot ausschaltest; dann fragt die App nichts mehr ab, und auch unser Server lehnt Abrufe für dein Konto ab. Die Wahl gilt auf allen
+  deinen Geräten. In einer Gruppenfahrt fragt die App nicht ab.</li>
 <li>Dafür schickt die App den <strong>vor dir liegenden Teil deiner Route</strong> an unseren Server: als Linie mit den erwarteten Fahrzeiten, höchstens für
   die nächsten zwei Stunden. Ein eigener Standort wird nicht zusätzlich gesendet; der Anfang der Linie ist aber der Ort, an dem du dich gerade
   befindest.</li>
@@ -152,14 +160,24 @@ Fahrten auf diesem Gerät.</p>
 <li>Die Orte stammen aus OpenStreetMap (© OpenStreetMap-Mitwirkende, Open Database License), die wir vorab auf unseren Server laden. Während der
   Fahrt fragen weder die App noch der Server externe Dienste nach Orten. Copilot gibt es nur mit Konto; die Zahl der Abrufe ist begrenzt.</li>
 </ul>
-<h3>3.7 Favoriten, Touren und „Meine Routen“</h3>
+<h3>3.7 Favoriten, Touren, „Meine Routen“, Fahrzeuge und Einstellungen</h3>
 <ul>
 <li>Mit Konto werden Favoriten, Touren und gespeicherte Routen <strong>Ende-zu-Ende verschlüsselt</strong> abgeglichen. Wir speichern nur den verschlüsselten
   Inhalt, keine Titel und keine Koordinaten. Nach einer Fahrt mit einer gespeicherten Route vermerkt die App in diesem verschlüsselten Eintrag
   Datum und gefahrene Strecke, keine Positionen.</li>
 <li>Ohne Konto bleiben sie nur auf dem Gerät. Meldest du dich an, fragt die App, ob sie in dein Konto übernommen werden; ohne Antwort wird nichts
   hochgeladen.</li>
-<li>Gelöschte Einträge entfernen wir nach 90 Tagen endgültig.</li>
+<li>Deine <strong>eigenen Fahrzeuge</strong> (mit Namen, Maßen, Meiden-Einstellungen, voreingestellter Route und
+  Fahrzeiten-Faktor) gleichen wir ebenfalls Ende-zu-Ende verschlüsselt zwischen deinen Geräten ab. Wir sehen nur, wann sie zuletzt gespeichert
+  wurden, nicht ihren Inhalt und nicht, wie viele es sind. Meldest du dich auf einem Gerät an, führt die App dessen eigene Fahrzeuge mit denen
+  deines Kontos zusammen. Abmelden leert die Fahrzeuge nur auf dem Gerät.</li>
+<li><strong>Einstellungen</strong> ohne Ortsbezug speichern wir mit deinem Konto im Klartext, damit sie auf allen deinen Geräten gelten: Kurvigkeit,
+  Kartenausrichtung, Farbthema, Briefing unterwegs, zwei Anzeigen der Fahrtansicht (Kurs-Horizont, Manöver im Cockpit) und Copilot an oder
+  aus. Wir speichern nur, was von der Voreinstellung abweicht. Hast du an deinem Konto noch nichts gewählt, gilt die Wahl auf deinem Gerät.
+  Beim Abmelden setzt die App sie auf dem Gerät auf die Voreinstellung zurück. Lautstärke, die zuletzt gezeigte Ansicht, die Vorschau von Mitteilungen
+  und deine Einwilligung für „an Admota senden“ bleiben je Gerät.</li>
+<li>Gelöschte Einträge entfernen wir nach 90 Tagen endgültig. Fängst du nach einem verlorenen Schlüssel „Neu“ an, löschen wir die
+  verschlüsselten Favoriten, Fahrzeuge und Fahrten bei uns, denn ohne den Schlüssel kann sie niemand mehr lesen.</li>
 </ul>
 <h3>3.8 Mitteilungen</h3>
 <ul>
@@ -201,8 +219,6 @@ Mit der Löschung des Kontos entfällt die Sperre.</p>
 <li>Unser Webserver protokolliert Zugriffe mit gekürzter IP-Adresse (IPv4 auf /24, IPv6 auf /48), ohne Cookies und Anmeldedaten, und nicht die
   Abrufe von Kartenausschnitten. Die Protokolle werden nach Größe rotiert (je Dienst höchstens 3 × 10 MB).</li>
 <li>Zur Fehlersuche bei der Routenberechnung sichern wir Diagnosezeilen ohne Koordinaten 14 Tage lang.</li>
-<li>Zur Fehlersuche sehen wir uns Protokolle im Einzelfall an – nur die nötigen Zeilen und ohne Inhalte deiner Nachrichten oder
-  Positionen.</li>
 <li>Zum Schutz vor Überlastung zählen wir Anfragen je IP-Bereich, nur als täglich wechselnden Prüfwert, nie als lesbare IP-Adresse; die Zähler
   verfallen nach höchstens einer Stunde.</li>
 <li>Damit wir Störungen bemerken, schickt unser Server Mitteilungen an die Geräte der Betreiber; sie enthalten nur Kürzel und Zahlen, keine Daten
@@ -339,8 +355,16 @@ abgefragt je Rasterzelle, ohne deine Position), die Orte entlang der Route (Ausz
 <td>bis Route, Fahrt oder Gruppe gelöscht werden</td>
 </tr>
 <tr>
-<td>gelöschte Favoriten, Touren, Routen</td>
-<td>90 Tage</td>
+<td>gelöschte Favoriten, Touren, Routen; Löschvermerke der Fahrten</td>
+<td>90 Tage (Inhalt der Fahrt sofort)</td>
+</tr>
+<tr>
+<td>Fahrten (verschlüsselt), Fahrzeuge</td>
+<td>bis du sie löschst, den Abgleich ausschaltest und Löschen wählst, oder dein Konto löschst</td>
+</tr>
+<tr>
+<td>Einstellungen am Konto</td>
+<td>bis du sie änderst oder dein Konto löschst</td>
 </tr>
 <tr>
 <td>Meldungen</td>
@@ -384,7 +408,8 @@ abgefragt je Rasterzelle, ohne deine Position), die Orte entlang der Route (Ausz
 <li><strong>Konto löschen:</strong> in der App unter Ich → „Konto löschen …“ und auf der Website unter „Konto“. Wir löschen sofort und endgültig: dein Konto
   und deine Anmeldungen auf allen Geräten, deine Geräte samt Push-Kennung, in jeder Gruppe deine Mitgliedschaft, Fahrten, Positionen,
   Einladungen und Nachrichten (eine Gruppe ohne weitere Mitglieder ganz; bist du letzter Admin, geht die Rolle an ein anderes Mitglied),
-  dein Profilfoto, deine Favoriten, Touren und gespeicherten Routen sowie deine Testdaten.</li>
+  dein Profilfoto, deine Favoriten, Touren und gespeicherten Routen, deine abgeglichenen Fahrten, Fahrzeuge und Einstellungen
+  sowie deine Testdaten.</li>
 <li>Ausnahmen: Gemeldete Nachrichten bleiben bis zur Erledigung der Meldung ohne Bezug zu deinem Konto stehen. Nachrichten in Gruppen, die du
   früher verlassen hast, bleiben mit dem damaligen Namen stehen. Einträge im Verwaltungsprotokoll bleiben mit einer
   Kurzkennung ohne Bezug zu deinem Konto (12 Monate). In Sicherungen bleiben Daten bis zu deren Löschung (bis 6 Monate).</li>
